@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Erisa Safitri A12.2025.07402</title>
+
+    <!-- CSS untuk desain website -->
+    <style>
+        /* =========================
+           PENGATURAN DASAR
+           ========================= */
+        body {
+            margin: 0;
+            background: linear-gradient(135deg,
+                    #D5E5D9 0%,
+                    #E8E6D6 50%,
+                    #C8DDD0 100%);
+            background-attachment: fixed;
+            color: #24392F;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           HEADER
+           ========================= */
+        header {
+            background: linear-gradient(120deg,
+                    #103C2D,
+                    #1D5A40,
+                    #174532);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 48px 20px 42px;
+            border-bottom: 5px solid #C9A45C;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+            letter-spacing: 3px;
+        }
+
+        header h3 {
+            margin: 10px 0 0;
+            font-weight: normal;
+            color: #E2EBDD;
+        }
+
+        .label-header {
+            color: #E4C77E;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin-bottom: 8px;
+        }
+
+        .garis-header {
+            width: 100px;
+            border: none;
+            border-top: 3px solid #D5B56C;
+            margin: 20px auto 0;
+        }
+
+        /* =========================
+           NAVIGASI
+           ========================= */
+        nav {
+            background: linear-gradient(90deg,
+                    #D3E4D8,
+                    #E9E8D9,
+                    #D3E4D8);
+            text-align: center;
+            padding: 16px 10px;
+            border-bottom: 1px solid #AFC9B7;
+            box-shadow: 0 4px 12px rgba(25, 65, 46, 0.10);
+        }
+
+        nav a {
+            display: inline-block;
+            color: #174A35;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 4px 8px;
+            padding: 5px 8px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #174A35;
+            color: #F0D99B;
+        }
+
+        /* =========================
+           BAGIAN KONTEN
+           ========================= */
+        section {
+            width: 85%;
+            max-width: 1000px;
+            margin: 32px auto;
+            padding: 30px;
+            box-sizing: border-box;
+
+            background: linear-gradient(135deg,
+                    #F0F6EF,
+                    #E0EDE3 65%,
+                    #E8E5D4);
+
+            border: 1px solid #B9D0BF;
+            border-top: 4px solid #367654;
+            border-radius: 15px;
+
+            box-shadow: 0 8px 22px rgba(25, 65, 46, 0.12);
+        }
+
+        section h2 {
+            color: #164A35;
+            border-left: 6px solid #C9A45C;
+            padding-left: 13px;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        section h3 {
+            color: #236B49;
+        }
+
+        /* =========================
+           PROFIL
+           ========================= */
+        #profil {
+            background: linear-gradient(120deg,
+                    #F0F6EF,
+                    #D8E9DD);
+        }
+
+        .foto-profil {
+            border: 5px solid #D0B36D;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 5px 14px rgba(23, 74, 53, 0.18);
+        }
+
+        .profil-text {
+            text-align: justify;
+        }
+
+        .profil-text b {
+            color: #174A35;
+        }
+
+        /* =========================
+           TABEL PENDIDIKAN
+           ========================= */
+        .tabel-pendidikan {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .tabel-pendidikan th {
+            background: linear-gradient(120deg,
+                    #174A35,
+                    #286847);
+            color: #FFFFFF;
+            padding: 13px 10px;
+            border: 1px solid #C9A45C;
+        }
+
+        .tabel-pendidikan td {
+            padding: 12px 10px;
+            border: 1px solid #BED2C4;
+        }
+
+        .tabel-pendidikan tr:nth-child(odd) {
+            background-color: #F0F6EF;
+        }
+
+        .tabel-pendidikan tr:nth-child(even) {
+            background-color: #DCEADF;
+        }
+
+        .tabel-pendidikan tr:hover {
+            background-color: #C9DDCE;
+        }
+
+        /* =========================
+           LINK
+           ========================= */
+        a {
+            color: #236B49;
+        }
+
+        section a:hover {
+            color: #986F24;
+        }
+
+        /* =========================
+           DAFTAR KEAHLIAN DAN HOBI
+           ========================= */
+        #keahlian {
+            background: linear-gradient(135deg,
+                    #D7E8DC,
+                    #E9E8D7);
+        }
+
+        #keahlian h3 {
+            display: inline-block;
+            background-color: #174A35;
+            color: #F2DDA2;
+            padding: 6px 13px;
+            border-radius: 6px;
+        }
+
+        ul,
+        ol {
+            padding-left: 28px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li::marker {
+            color: #B18B42;
+        }
+
+        /* =========================
+           ARTICLE
+           ========================= */
+        article {
+            background: linear-gradient(120deg,
+                    #F2F7F0,
+                    #DCEADF);
+            border-left: 5px solid #C9A45C;
+            border-radius: 9px;
+            padding: 16px 22px;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 9px rgba(23, 74, 53, 0.07);
+        }
+
+        article h3 {
+            margin-top: 0;
+            color: #174A35;
+        }
+
+        /* =========================
+           ASIDE
+           ========================= */
+        aside {
+            background: linear-gradient(120deg,
+                    #D2E4D7,
+                    #E7E4D1);
+            border: 1px solid #B9CFBE;
+            border-left: 5px solid #B18B42;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-top: 22px;
+        }
+
+        aside b {
+            color: #174A35;
+        }
+
+        /* =========================
+           FORM KONTAK
+           ========================= */
+        #kontak {
+            background: linear-gradient(135deg,
+                    #D5E7DA,
+                    #EAE7D5);
+        }
+
+        .form-kontak {
+            background: linear-gradient(135deg,
+                    #F1F6EF,
+                    #DFEADF);
+            padding: 20px;
+            border: 1px solid #B8CFBD;
+            border-radius: 10px;
+        }
+
+        .form-kontak table {
+            width: 100%;
+        }
+
+        .form-kontak td {
+            padding: 7px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            box-sizing: border-box;
+            max-width: 100%;
+            padding: 10px;
+            border: 1px solid #A8C2AF;
+            border-radius: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #FAFCF8;
+            color: #24392F;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #B18B42;
+            box-shadow: 0 0 0 3px rgba(201, 164, 92, 0.18);
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 17px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(120deg,
+                    #174A35,
+                    #2C7650);
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background: #C9A45C;
+            color: #173C2C;
+        }
+
+        input[type="reset"] {
+            background-color: #D2E0D6;
+            color: #24392F;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #B8CEBF;
+        }
+
+        /* =========================
+           FOOTER
+           ========================= */
+        footer {
+            background: linear-gradient(120deg,
+                    #103C2D,
+                    #1D5A40,
+                    #103C2D);
+            color: #F3F4E9;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 45px;
+            border-top: 4px solid #C9A45C;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .aksen-footer {
+            color: #E4C77E;
+        }
+
+        /* =========================
+           TAMPILAN LAYAR KECIL
+           ========================= */
+        @media (max-width: 700px) {
+            header {
+                padding: 35px 15px;
+            }
+
+            header h1 {
+                font-size: 25px;
+                letter-spacing: 2px;
+            }
+
+            header h3 {
+                font-size: 15px;
+            }
+
+            nav {
+                padding: 10px 5px;
+            }
+
+            nav a {
+                margin: 3px;
+                font-size: 13px;
+            }
+
+            section {
+                width: 92%;
+                padding: 20px;
+                margin: 22px auto;
+            }
+
+            .foto-profil {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 15px;
+            }
+
+            .tabel-pendidikan {
+                font-size: 12px;
+            }
+
+            .tabel-pendidikan th,
+            .tabel-pendidikan td {
+                padding: 7px 5px;
+                overflow-wrap: anywhere;
+            }
+
+            .form-kontak {
+                padding: 10px;
+            }
+
+            .form-kontak table {
+                font-size: 13px;
+            }
+
+            .form-kontak td {
+                padding: 4px 2px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            select,
+            textarea {
+                width: 100%;
+                min-width: 0;
+            }
+
+            input[type="submit"],
+            input[type="reset"] {
+                padding: 9px 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Halaman -->
+    <header>
+        <p class="label-header">PERSONAL PORTFOLIO</p>
+
+        <h1>ERISA SAFITRI</h1>
+
+        <h3>
+            Mahasiswa Sistem Informasi - Universitas Dian Nuswantoro
+        </h3>
+
+        <hr class="garis-header">
+    </header>
+
+
+    <!-- Navigasi Utama -->
+    <nav>
+        <a href="#profil">Profil Saya</a> |
+        <a href="#pendidikan">Riwayat Pendidikan</a> |
+        <a href="#keahlian">Keahlian & Hobi</a> |
+        <a href="#proyek">Proyek Terkait</a> |
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+
+    <!-- Bagian Profil -->
+    <section id="profil">
+
+        <h2>A. Profil Saya</h2>
+
+        <!-- Gambar Profil -->
+        <img src="img/ERISA.JPG" alt="Foto Erisa Safitri" width="250" height="250" align="left" hspace="20"
+            class="foto-profil">
+
+        <div class="profil-text">
+            <p>
+                Halo! Nama saya <b>Erisa Safitri</b>. Saya adalah mahasiswa
+                aktif Program Studi Sistem Informasi di Fakultas Ilmu Komputer,
+                Universitas Dian Nuswantoro. Saya memiliki ketertarikan dalam
+                bidang analisis sistem, pengembangan aplikasi web, pengelolaan
+                basis data, serta pemanfaatan teknologi informasi.
+            </p>
+
+            <p>
+                Sebagai mahasiswa Sistem Informasi, saya senang mempelajari
+                berbagai hal baru yang berkaitan dengan teknologi informasi.
+                Saya juga terus berusaha mengembangkan kemampuan melalui tugas,
+                proyek perkuliahan, dan kegiatan akademik.
+            </p>
+
+            <p>
+                Website ini dibuat sebagai salah satu latihan dalam memahami
+                struktur dasar HTML5 sekaligus sebagai media untuk
+                memperkenalkan profil, pendidikan, keahlian, proyek,
+                dan aktivitas akademik saya.
+            </p>
+        </div>
+
+        <br clear="all">
+    </section>
+
+
+    <!-- Bagian Pendidikan -->
+    <section id="pendidikan">
+
+        <h2>B. Riwayat Pendidikan</h2>
+
+        <table class="tabel-pendidikan">
+            <tr>
+                <th>Tingkat Pendidikan</th>
+                <th>Nama Instansi / Sekolah</th>
+                <th>Tahun</th>
+                <th>Keterangan</th>
+            </tr>
+
+            <tr>
+                <td>Sekolah Menengah Atas (SMA)</td>
+                <td>SMAN 1 Comal</td>
+                <td>2021 - 2024</td>
+                <td>Jurusan MIPA</td>
+            </tr>
+
+            <tr>
+                <td>Perguruan Tinggi (S1)</td>
+                <td>
+                    <a href="https://www.dinus.ac.id" target="_blank">
+                        Universitas Dian Nuswantoro
+                    </a>
+                </td>
+                <td>2025 - Sekarang</td>
+                <td>Sistem Informasi</td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <!-- Bagian Keahlian & Hobi -->
+    <section id="keahlian">
+
+        <h2>C. Keahlian & Hobi</h2>
+
+        <h3>1. Keahlian Utama</h3>
+
+        <ul>
+            <li>Pemrograman Web Dasar (HTML)</li>
+            <li>Pengelolaan Database MySQL</li>
+            <li>Pemodelan Sistem (DFD & ERD)</li>
+            <li>Analisis dan Perancangan Sistem Informasi</li>
+        </ul>
+
+        <h3>2. Hobi & Minat</h3>
+
+        <ol>
+            <li>
+                Membaca dokumentasi dan materi teknologi di
+                <a href="https://www.w3schools.com" target="_blank">
+                    W3Schools
+                </a>
+            </li>
+            <li>Eksplorasi pembuatan aplikasi web</li>
+            <li>Menulis</li>
+            <li>Mempelajari teknologi informasi baru</li>
+        </ol>
+
+    </section>
+
+
+    <!-- Bagian Proyek -->
+    <section id="proyek">
+
+        <h2>D. Proyek & Aktivitas Akademik</h2>
+
+        <article>
+            <h3>Tugas Pemrograman Web 1</h3>
+
+            <p>
+                Proyek ini merupakan latihan pembuatan halaman profil
+                menggunakan HTML5. Dalam proyek ini digunakan berbagai
+                elemen HTML seperti struktur semantik, tabel, list,
+                hyperlink, gambar, serta form untuk menghasilkan sebuah
+                halaman web yang terstruktur.
+            </p>
+        </article>
+
+        <article>
+            <h3>Proyek Akademik Sistem Informasi</h3>
+
+            <p>
+                Selama menjadi mahasiswa Sistem Informasi, saya mengerjakan
+                berbagai proyek perkuliahan yang berkaitan dengan analisis
+                sistem, pemodelan proses bisnis, basis data, serta pemanfaatan
+                teknologi informasi untuk mendukung kebutuhan organisasi.
+            </p>
+        </article>
+
+        <!-- Element Aside -->
+        <aside>
+            <p>
+                <b>Catatan Kampus:</b>
+                Informasi jadwal perkuliahan dan layanan akademik dapat
+                dilihat melalui portal
+                <a href="https://my.dinus.ac.id" target="_blank">
+                    Siedin Udinus
+                </a>.
+            </p>
+        </aside>
+
+    </section>
+
+
+    <!-- Bagian Form Kontak -->
+    <section id="kontak">
+
+        <h2>E. Form Kontak Pengunjung</h2>
+
+        <p>
+            Silakan isi form di bawah ini untuk mengirimkan pesan.
+        </p>
+
+        <form action="simpan.php" method="post" class="form-kontak">
+
+            <table border="0" cellpadding="5">
+
+                <tr>
+                    <td>
+                        <label for="fnama">Nama Lengkap</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="fnama" name="fnama" size="30" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="femail">Email</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="email" id="femail" name="femail" size="30" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="pria" name="fjkel" value="Pria">
+                        <label for="pria">Pria</label>
+
+                        <input type="radio" id="wanita" name="fjkel" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="fprodi">Program Studi</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <select id="fprodi" name="fprodi">
+                            <option value="SI">Sistem Informasi S1</option>
+                            <option value="TI">Teknik Informatika S1</option>
+                            <option value="DKV">Desain Komunikasi Visual S1</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobi / Minat</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" id="coding" name="fhobi[]" value="Coding">
+                        <label for="coding">Coding</label>
+
+                        <input type="checkbox" id="reading" name="fhobi[]" value="Membaca">
+                        <label for="reading">Membaca</label>
+
+                        <input type="checkbox" id="analisis" name="fhobi[]" value="Analisis Sistem">
+                        <label for="analisis">Analisis Sistem</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="fpesan">Pesan</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <textarea id="fpesan" name="fpesan" rows="4" cols="32"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Kirim Pesan">
+                        <input type="reset" value="Batal">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <span class="aksen-footer">✦</span>
+            &copy; 2026 Erisa Safitri -
+            Pemrograman Web Sistem Informasi
+            Universitas Dian Nuswantoro
+            <span class="aksen-footer">✦</span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
